@@ -1,0 +1,1 @@
+// if greg, onclick = greg.html as a table
