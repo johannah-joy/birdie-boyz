@@ -1,21 +1,31 @@
-let groupOutput = document.getElementById('group-output');
+let form = document.getElementsByTagName('form');
+let groupOutput = document.getElementById('groupOutput');
 let player = document.getElementById('player');
 let submit = document.getElementById('submit');
+let bryanData = document.getElementById('bryanData');
+let davidData = document.getElementById('davidData');
+let gregData = document.getElementById('gregData');
+let steveData = document.getElementById('steveData');
 
 let score = 0;
 // score = amount of submissions
 
 // if greg, onclick = greg.html as a table
 submit.addEventListener("click", function() {
-    if (player.value === 'bryan') {
-        console.log(player.value)
-        submit = bryan.html
-    } else if (name === 'david') {
-        submit = david.html
-    } else if (name === 'greg') {
-        submit = greg.html
-    } else if (name === 'steve') {
-        submit = steve.html
-    }
+    console.log(player.value)
     groupOutput.innerText = score++;
+    if (player.value === 'bryan') {
+        
+        form.action = bryan.html;
+        form.method = 'GET';
+        // submit = bryan.html;
+        // bryanData.innerText;
+    } 
+    // else if (name === 'david') {
+    //     submit = david.html
+    // } else if (name === 'greg') {
+    //     submit = greg.html
+    // } else if (name === 'steve') {
+    //     submit = steve.html
+    // }
 })

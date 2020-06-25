@@ -18,12 +18,12 @@
 
     <div>
         <h4>Group Total:</h4>
-        <span id="group-output"></span>
+        <span id="groupOutput"></span>
     </div>
     
     <form action="">
         <label for="player">Player:</label><br>
-        <select name="player" id="player">
+        <select name="player" id="player" required>
             <option value="bryan">Bryan</option>
             <option value="david">David</option>
             <option value="greg">Greg</option>
@@ -31,14 +31,14 @@
         </select>
         <br><br>
         <label for="">Date:</label><br>
-        <input type="date">
+        <input type="date" required>
         <br><br>
         <label for="">Golf Course:</label><br>
         <!-- how to remember golf course name -->
-        <input type="text" placeholder="Golf Course">
+        <input type="text" placeholder="Golf Course" required>
         <br><br>
         <label for="hole">Hole #:</label><br>
-        <select name="hole" id="hole">
+        <select name="hole" id="hole" required>
             <option value="one">1</option>
             <option value="two">2</option>
             <option value="three">3</option>
