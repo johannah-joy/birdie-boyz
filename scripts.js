@@ -13,6 +13,7 @@ let score = 0;
 // if greg, onclick = greg.html as a table
 submit.addEventListener("click", function() {
     console.log(player.value)
+    console.log('hi')
     groupOutput.innerText = score++;
     if (player.value === 'bryan') {
         
