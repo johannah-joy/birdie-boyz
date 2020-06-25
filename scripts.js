@@ -14,19 +14,19 @@ let score = 0;
 submit.addEventListener("click", function() {
     console.log(player.value)
     console.log('hi')
-    groupOutput.innerText = score++;
-    if (player.value === 'bryan') {
-        
-        form.action = bryan.html;
-        form.method = 'GET';
+    
+    if (player.value == 'bryan') {
+        form.action = 'bryan.html';
+        form.method = 'POST';
         // submit = bryan.html;
         // bryanData.innerText;
     } 
-    // else if (name === 'david') {
+    // else if (name == 'david') {
     //     submit = david.html
-    // } else if (name === 'greg') {
+    // } else if (name == 'greg') {
     //     submit = greg.html
-    // } else if (name === 'steve') {
+    // } else if (name == 'steve') {
     //     submit = steve.html
     // }
+    groupOutput.innerText = score++;
 })
