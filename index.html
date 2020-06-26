@@ -8,20 +8,21 @@
 </head>
 <body>
     <h1>Birdie Boyz</h1>
-    <ul class="nav-top">
+    <ul class="nav-top" id="nav-home">
         <li><a href="index.html">Home</a></li>
         <li><a href="bryan.html">Bryan</a></li>
         <li><a href="david.html">David</a></li>
         <li><a href="greg.html">Greg</a></li>
         <li><a href="steve.html">Steve</a></li>
+        <li><a href="data.html">Data</a></li>
     </ul>
-
+    <!-- <img src="BirdieBoyz.jpeg" alt="Photo of the Birdie Boyz"> -->
     <div>
         <h4>Group Total:</h4>
-        <span id="groupOutput"></span>
+        <span id="groupOutput">0</span>
     </div>
     
-    <form action="">
+    <form action="data.html" method="GET">
         <label for="player">Player:</label><br>
         <select name="player" id="player" required>
             <option value="bryan">Bryan</option>
@@ -34,8 +35,7 @@
         <input type="date" required>
         <br><br>
         <label for="">Golf Course:</label><br>
-        <!-- how to remember golf course name -->
-        <input type="text" placeholder="Golf Course" autocomplete="on" required>
+        <input type="text" placeholder="Golf Course" required>
         <br><br>
         <label for="hole">Hole #:</label><br>
         <select name="hole" id="hole" required>

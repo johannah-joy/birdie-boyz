@@ -1,5 +1,6 @@
 let form = document.getElementsByTagName('form');
 let groupOutput = document.getElementById('groupOutput');
+// let score = ;
 let player = document.getElementById('player');
 let submit = document.getElementById('submit');
 let bryanData = document.getElementById('bryanData');
